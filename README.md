@@ -1,5 +1,5 @@
 git add .🧠 AI-Powered Sentiment & Brand Monitor
-[Live Demo Link (Paste your Streamlit URL here)]
+[Live Demo Link (https://sentiment-analyzer-ai-m2owdclfccx7rqsmfz2kpd.streamlit.app/)]
 📖 Project Overview
 This project is an NLP (Natural Language Processing) application that analyzes the emotional tone of text. It is designed for businesses to monitor brand health by automatically categorizing customer reviews, social media mentions, or support tickets into Positive, Negative, or Neutral sentiments.
 
