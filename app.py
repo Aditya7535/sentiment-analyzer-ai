@@ -3,9 +3,9 @@ from textblob import TextBlob
 import pandas as pd
 import matplotlib.pyplot as plt
 
-st.set_page_config(page_title="AI Brand Monitor", page_icon="🧠")
+st.set_page_config(page_title="AI Brand Monitor", page_icon="")
 
-st.title("🧠 AI Sentiment & Brand Monitor")
+st.title("AI Sentiment & Brand Monitor")
 st.markdown("""
 This app uses **Natural Language Processing (NLP)** to analyze the emotion behind text. 
 Perfect for monitoring social media, product reviews, or customer support tickets.
@@ -28,11 +28,11 @@ if choice == "Live Analysis":
         col1, col2 = st.columns(2)
         with col1:
             if analysis.sentiment.polarity > 0:
-                st.success(f"Positive Sentiment 😊 (Score: {analysis.sentiment.polarity:.2f})")
+                st.success(f"Positive Sentiment (Score: {analysis.sentiment.polarity:.2f})")
             elif analysis.sentiment.polarity < 0:
-                st.error(f"Negative Sentiment 😡 (Score: {analysis.sentiment.polarity:.2f})")
+                st.error(f"Negative Sentiment (Score: {analysis.sentiment.polarity:.2f})")
             else:
-                st.warning(f"Neutral Sentiment 😐 (Score: {analysis.sentiment.polarity:.2f})")
+                st.warning(f"Neutral Sentiment (Score: {analysis.sentiment.polarity:.2f})")
         
         with col2:
             st.info(f"Subjectivity: {analysis.sentiment.subjectivity:.2f} (1.0 = Highly Opinionated)")
